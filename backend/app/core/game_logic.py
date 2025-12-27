@@ -15,8 +15,13 @@ def capture_tile(game: GameState, player_id: str, x: int, y: int) -> bool:
         return False
 
     tile.owner = TileOwner(player_id.upper())
-    game.current_turn = (
-        "player_2" if player_id == "player_1" else "player_1"
-    )
+
+    game.apply_scoring()
+    game.check_winner()
+
+    if not game.is_over:
+        game.current_turn = (
+            "player_2" if player_id == "player_1" else "player_1"
+        )
 
     return True
