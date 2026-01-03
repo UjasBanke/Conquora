@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Conquora</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="landing-screen">
+    <div id="logo-area">
+        <img src="assets/blue_soldier.jpg" class="soldier" />
+        <h1 id="game-title">CONQUORA</h1>
+        <img src="assets/red_soldier.png" class="soldier" />
+    </div>
+    <p id="tagline">A battle of strategy and patience</p>
+    <button id="play-btn">Play Now</button>
+</div>
+
+<div id="setup-screen" class="hidden">
+    <h2>Prepare for Battle</h2>
+    <input id="player1-name" placeholder="Player 1 (Blue)" />
+    <input id="player2-name" placeholder="Player 2 (Red)" />
+    <button id="start-btn">Start Battle</button>
+</div>
+
+<div id="game-screen" class="hidden">
+
+    <div id="top-bar">
+        <div class="score blue">
+            <span id="p1-name"></span>
+            <span id="p1-score">0</span>
+        </div>
+
+        <div id="turn-display">TURN</div>
+
+        <div class="score red">
+            <span id="p2-name"></span>
+            <span id="p2-score">0</span>
+        </div>
+    </div>
+
+    <div id="game-layout">
+        <img src="assets/blue_soldier.jpg" class="side-soldier" />
+        <canvas id="gameCanvas" width="520" height="520"></canvas>
+        <img src="assets/red_soldier.png" class="side-soldier" />
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
