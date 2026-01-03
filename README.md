@@ -21,7 +21,7 @@ The project focuses on deterministic game logic, clean state management, and a p
 
 1. Clone the repository:
  ```bash
-git clone https://github.com/UjasBanke/conquora.git
+git clone https://github.com/UjasBanke/Conquora.git
 ```
 
 
@@ -31,4 +31,5 @@ No build tools or server are required.
 
 
 Have fun playing!
+
 
